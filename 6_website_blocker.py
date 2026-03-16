@@ -1,18 +1,7 @@
-"""
-Website Blocker in Python
-- Block/unblock websites by editing the system hosts file
-- Requires admin/sudo privileges to run
-- Works on Windows, macOS, and Linux
-
-⚠️  Run with: sudo python 6_website_blocker.py  (Linux/Mac)
-              Run as Administrator              (Windows)
-"""
-
 import os
 import sys
 import platform
 
-# Hosts file location per OS
 if platform.system() == "Windows":
     HOSTS_FILE = r"C:\Windows\System32\drivers\etc\hosts"
 else:
